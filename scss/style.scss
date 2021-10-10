@@ -1,0 +1,212 @@
+@import "vars";
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  font-family: $fontText;
+  margin: 0;
+  header {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: #fff;
+
+    h1 {
+      font-family: $fontHead;
+      font-size: 5em;
+      margin-bottom: 0;
+      text-align: center;
+      border: 0 2em;
+      border-bottom: solid white 1px;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+}
+h4 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0em;
+}
+p {
+    text-align: center;
+  }
+
+nav {
+  width: 100%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(37, 38, 54, 0.397);
+    li {
+      float: right;
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+    }
+  }
+  li a:hover {
+    background-color: rgba(0, 0, 0, 0.322);
+  }
+}
+
+main {
+  padding: 2em 5em;
+  .portfolio {
+    margin: auto;
+    width: 90%;
+      h2{
+          border-bottom: solid 2px rgb(61, 60, 60);
+      }
+    .rad {
+        margin: 0 1.5em 3em;
+        display: inline-block;
+        width: 30%;
+        height: 45em;
+        overflow: hidden;
+      img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    p{
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.btn {
+  margin: auto;
+  width: 30%;
+  border: 3px solid gray;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+    color: #000;
+  }
+  .fas {
+    color: gray;
+  }
+}
+
+.btn:hover {
+  background-color: gray;
+  a {
+    color: #fff;
+  }
+  .fas {
+    color: #fff;
+  }
+}
+
+.aboutMe {
+    h2 { 
+    margin-top: 2em;
+    border-bottom: navy solid 2px;
+    }
+  .bio {
+    // padding: 0 1em 3em;
+    display: inline-block;
+    width: 20%;
+    padding: 0 0.5em 0.5em;
+    border: solid navy 1px;
+    margin: auto 1em 3em;
+   
+  }
+}
+.opis{
+    padding-bottom: 2em;
+    font-size: 1.5em;
+}
+
+footer{
+    background-image:url(../images/background.jpg);
+    color: rgb(248, 245, 245);
+    margin: 3em 0 0;
+    position: relative;
+    padding-top: 0.5em;
+    .con{
+        
+        padding: em 5em;
+       
+    }
+    .ivana{
+        display: block;
+        padding: 0em 0em 1em ;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+  main{
+
+  .portfolio{
+    .rad{
+      height: 40em;
+      width: 40%;
+    }
+   
+  }
+  .aboutMe{
+    .bio{
+      width: 40%;
+    }
+  }
+}
+}
+
+@media screen and (max-width: 768px){
+  main{
+  .portfolio{
+    .rad{
+      height: 29em;
+    }
+  }
+  .aboutMe{
+    .bio{
+      width: 90%;
+    }
+  }
+}
+}
+
+
+@media screen and (max-width: 425px){
+  main{
+  .portfolio{
+    .rad{
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+}
+}
+
+
